@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Gallery (No JS)</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fffaf0;
+      text-align: center;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .big-image {
+      max-width: 90%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px gray;
+      margin-bottom: 20px;
+    }
+
+    .thumbnails {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .thumbnails label img {
+      width: 120px;
+      height: auto;
+      cursor: pointer;
+      border-radius: 6px;
+      transition: transform 0.2s;
+    }
+
+    .thumbnails label img:hover {
+      transform: scale(1.05);
+    }
+
+    input[type="radio"] {
+      display: none;
+    }
+
+    .image {
+      display: none;
+    }
+
+    #img1:checked ~ .images #image1,
+    #img2:checked ~ .images #image2,
+    #img3:checked ~ .images #image3,
+    #img4:checked ~ .images #image4 {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>My Gallery</h1>
+
+  <!-- Radio buttons -->
+  <input type="radio" name="image" id="img1" checked>
+  <input type="radio" name="image" id="img2">
+  <input type="radio" name="image" id="img3">
+  <input type="radio" name="image" id="img4">
+
+  <!-- Large images container -->
+  <div class="images">
+    <img id="image1" class="image big-image" src="https://cdn.charitystars.com/data/products/88724/13-pend-skynews-roger-federer-wimbledon5908267.jpg" alt="Big 1">
+    <img id="image2" class="image big-image" src="https://tse3.mm.bing.net/th/id/OIP.niJaSRT9ly7U_ROvnQkBIgHaEK?w=760&h=427&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Big 2">
+    <img id="image3" class="image big-image" src="https://tse4.mm.bing.net/th/id/OIP.4kCnkAcP89-SLQEBmFuy-wHaE8?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Big 3">
+    <img id="image4" class="image big-image" src="https://i.pinimg.com/736x/13/a6/a9/13a6a9dd475bf51afedd3eb2b8f2a287.jpg" alt="Big 4">
+  </div>
+
+  <!-- Thumbnails -->
+  <div class="thumbnails">
+    <label for="img1"><img src="https://cdn.charitystars.com/data/products/88724/13-pend-skynews-roger-federer-wimbledon5908267.jpg" alt="Thumb 1"></label>
+    <label for="img2"><img src="https://tse3.mm.bing.net/th/id/OIP.niJaSRT9ly7U_ROvnQkBIgHaEK?w=760&h=427&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Thumb 2"></label>
+    <label for="img3"><img src="https://tse4.mm.bing.net/th/id/OIP.4kCnkAcP89-SLQEBmFuy-wHaE8?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Thumb 3"></label>
+    <label for="img4"><img src="https://i.pinimg.com/736x/13/a6/a9/13a6a9dd475bf51afedd3eb2b8f2a287.jpg" alt="Thumb 4"></label>
+  </div>
+
+</body>
+</html>
