@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Favorite Books</title>
+  <style>
+    body { font-family: Arial; background: #f0fff0; }
+    .book-container { display: flex; flex-wrap: wrap; justify-content: center; }
+    .book { width: 200px; margin: 15px; padding: 10px; background: white; border-radius: 8px; box-shadow: 0 0 8px gray; text-align: center; }
+    img { width: 100px; height: 150px; }
+  </style>
+</head>
+<body>
+  <h1 style="text-align:center;">My Favorite Books</h1>
+  <div class="book-container">
+    <div class="book">
+      <img src="https://via.placeholder.com/100x150" alt="Book 1">
+      <h3>Book Title 1</h3>
+      <p>A brief description of this amazing book.</p>
+    </div>
+    <div class="book">
+      <img src="https://via.placeholder.com/100x150" alt="Book 2">
+      <h3>Book Title 2</h3>
+      <p>This book changed the way I see the world.</p>
+    </div>
+    <div class="book">
+      <img src="https://via.placeholder.com/100x150" alt="Book 3">
+      <h3>Book Title 3</h3>
+      <p>An inspiring story that I love to reread.</p>
+    </div>
+  </div>
+</body>
+</html>
