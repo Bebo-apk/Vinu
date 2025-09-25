@@ -1,1 +1,38 @@
-digwuich
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Best Hypercar Selection Form</title>
+</head>
+<body>
+    <h2>Choose the Best Hypercar</h2>
+    <form>
+        <label for="name">Your Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <fieldset>
+            <legend>Select Your Favorite Hypercar:</legend>
+            <input type="radio" id="bugatti" name="hypercar" value="Bugatti Chiron" required>
+            <label for="bugatti">Bugatti Chiron</label><br>
+
+            <input type="radio" id="koenigsegg" name="hypercar" value="Koenigsegg Jesko">
+            <label for="koenigsegg">Koenigsegg Jesko</label><br>
+
+            <input type="radio" id="pagani" name="hypercar" value="Pagani Huayra">
+            <label for="pagani">Pagani Huayra</label><br>
+
+            <input type="radio" id="mclaren" name="hypercar" value="McLaren Speedtail">
+            <label for="mclaren">McLaren Speedtail</label><br>
+
+            <input type="radio" id="ferrari" name="hypercar" value="Ferrari SF90 Stradale">
+            <label for="ferrari">Ferrari SF90 Stradale</label><br>
+        </fieldset>
+        <br>
+
+        <label for="comments">Why is it the best? (Optional):</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="40"></textarea><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+
