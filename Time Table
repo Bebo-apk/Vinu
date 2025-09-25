@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class Timetable</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: center;
+      background: #fff;
+    }
+    th, td {
+      border: 1px solid #333;
+      padding: 12px;
+    }
+    th {
+      background-color: #333;
+      color: #fff;
+    }
+    td {
+      background-color: #fafafa;
+    }
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Weekly Class Timetable</h2>
+
+  <table>
+    <tr>
+      <th>Time</th>
+      <th>Monday</th>
+      <th>Tuesday</th>
+      <th>Wednesday</th>
+      <th>Thursday</th>
+      <th>Friday</th>
+    </tr>
+    <tr>
+      <td>10:00 - 11:00</td>
+      <td>Law of Crime</td>
+      <td>Contract Law</td>
+      <td>Constitutional Law</td>
+      <td>Family Law</td>
+      <td>Web Programming</td>
+    </tr>
+    <tr>
+      <td>11:00 - 12:00</td>
+      <td>Family Law</td>
+      <td>Operating System</td>
+      <td>Law of Crime</td>
+      <td>Contract Law</td>
+      <td>Constitutional Law</td>
+    </tr>
+    <tr>
+      <td>12:00 - 1:00</td>
+      <td>Contract Law</td>
+      <td>Constitutional Law</td>
+      <td>Operating System</td>
+      <td>Web Programming</td>
+      <td>Family Law</td>
+    </tr>
+    <tr>
+      <td>1:00 - 2:00</td>
+      <td colspan="5" style="background-color: #ddd;"><b>Lunch Break</b></td>
+    </tr>
+    <tr>
+      <td>2:00 - 3:00</td>
+      <td>Web Programming</td>
+      <td>Law of Crime</td>
+      <td>Family Law</td>
+      <td>Operating System</td>
+      <td>Contract Law</td>
+    </tr>
+    <tr>
+      <td>3:00 - 4:00</td>
+      <td>Operating System</td>
+      <td>Family Law</td>
+      <td>Contract Law</td>
+      <td>Constitutional Law</td>
+      <td>Law of Crime</td>
+    </tr>
+    <tr>
+      <td>4:00 - 5:00</td>
+      <td>Constitutional Law</td>
+      <td>Web Programming</td>
+      <td>Law of Crime</td>
+      <td>Family Law</td>
+      <td>Operating System</td>
+    </tr>
+  </table>
+
+</body>
+</html>
